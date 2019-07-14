@@ -1,7 +1,14 @@
 /* Inital Setup */
+
+
 /*color1:#ff5722*/
+
+
 /*color2:#ee3900*/
+
+
 /*color3:#16a085*/
+
 * {
     margin: 0;
     padding: 0;
@@ -73,6 +80,7 @@ h2:after {
     margin-top: 30px;
 }
 
+
 /* Paragrahp*/
 
 .long-copy {
@@ -81,10 +89,27 @@ h2:after {
     margin-left: 15%;
 }
 
+
+/*links*/
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+}
+
+a:hover,
+a:active {
+    color: #555;
+}
+
+
 /* Button */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
@@ -93,7 +118,8 @@ h2:after {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #ff5722;
     border: 1px solid #ff5722;
     color: #fff;
@@ -107,12 +133,16 @@ h2:after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #ee3900
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     border: 1px solid #ee3900;
 }
 
@@ -122,18 +152,23 @@ h2:after {
     color: #fff;
 }
 
+
 /* Icons */
+
 .icons {
     color: #16a085;
     display: block;
     font-size: 200%;
     margin-bottom: 10px;
 }
+
 .smal-icons {
     color: #ee3900;
     font-size: 80%;
     margin-right: 5px;
 }
+
+
 /* Header*/
 
 header {
@@ -192,7 +227,6 @@ header {
 }
 
 
-
 /*Meals*/
 
 .section-meals {
@@ -222,7 +256,7 @@ header {
     width: 100%;
     height: auto;
     transform: scale(1.15);
-    transition: transform 0.1s, opacity 0.3s;
+    transition: transform 0.1s, opacity 0.1s;
 }
 
 .meal-photo img:hover {
@@ -233,7 +267,7 @@ header {
 
 /*Steps*/
 
-.section-steps{
+.section-steps {
     margin-top: 300px;
     background-color: #e0e0e0;
 }
@@ -243,7 +277,6 @@ header {
     padding-right: 3%;
     margin-top: 30px;
 }
-
 
 .steps-box:last-child {
     padding-left: 3%;
@@ -277,6 +310,7 @@ header {
     margin-right: 10px;
 }
 
+
 /*City*/
 
 .section-cities {
@@ -292,6 +326,7 @@ header {
     width: auto;
     margin-right: 20px;
 }
+
 
 /*testimonials*/
 
@@ -323,9 +358,10 @@ cite {
 cite img {
     height: 50px;
     border-radius: 50%;
-    margin-right: 10px; 
+    margin-right: 10px;
     vertical-align: middle
 }
+
 
 /* section-plans */
 
@@ -345,9 +381,11 @@ cite img {
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
 }
+
 .plan-box ul {
     list-style: none;
 }
+
 .plan-box ul li {
     padding: 5px 0;
 }
@@ -369,4 +407,100 @@ cite img {
 
 .plan-price-meal {
     font-size: 80%
+}
+
+
+/*contact-form*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #333333;
+    padding: 50px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child {
+    margin-right: 0px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #fff
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ee3900
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    font-size: 120%
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    margin-top: 30px;
+    color: #888;
+    text-align: center;
+    font-size: 90%
 }
