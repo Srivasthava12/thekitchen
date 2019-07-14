@@ -1,7 +1,7 @@
 /* Inital Setup */
 /*color1:#ff5722*/
 /*color2:#ee3900*/
-
+/*color3:#16a085*/
 * {
     margin: 0;
     padding: 0;
@@ -122,6 +122,18 @@ h2:after {
     color: #fff;
 }
 
+/* Icons */
+.icons {
+    color: #16a085;
+    display: block;
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+.smal-icons {
+    color: #ee3900;
+    font-size: 80%;
+    margin-right: 5px;
+}
 /* Header*/
 
 header {
@@ -129,6 +141,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -178,12 +191,7 @@ header {
     margin-bottom: 20px;
 }
 
-.icons {
-    color: #16a085;
-    display: block;
-    font-size: 200%;
-    margin-bottom: 10px;
-}
+
 
 /*Meals*/
 
@@ -214,7 +222,7 @@ header {
     width: 100%;
     height: auto;
     transform: scale(1.15);
-    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.1s, opacity 0.3s;
 }
 
 .meal-photo img:hover {
@@ -259,7 +267,6 @@ header {
     width: 55px;
     text-align: center;
     padding: 5px;
-    float: left;
     font-size: 150%;
     margin-right: 25px
 }
@@ -275,7 +282,91 @@ header {
 .section-cities {
     text-align: center;
 }
+
+.city-icons {
+    color: #16a085;
+}
+
 .city-photo {
-    height: 200px;
+    height: 150px;
     width: auto;
+    margin-right: 20px;
+}
+
+/*testimonials*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/section-testimonials-background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 50px
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; 
+    vertical-align: middle
+}
+
+/* section-plans */
+
+.section-plans {
+    background-color: #e0e0e0;
+}
+
+.plan-box {
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #e8e8e8
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-box ul {
+    list-style: none;
+}
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-price {
+    font-size: 200%;
+    margin-bottom: 10px;
+    color: #16a085
+}
+
+.plan-price span {
+    font-size: 30%
+}
+
+.plan-price-meal {
+    font-size: 80%
 }
